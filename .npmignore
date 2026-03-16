@@ -2,4 +2,4 @@ index.ts
 download.ts
 tsconfig.json
 node_modules
-dist/instdir
+dist
