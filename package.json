@@ -1,12 +1,13 @@
 {
-    "name": "libreoffice-convert",
-    "version": "1.0.0",
+    "name": "@smenikdov/libreoffice-convert",
+    "version": "1.0.1",
     "description": "A package to convert files using LibreOffice",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "scripts": {
         "build": "tsc",
-        "prepublishOnly": "npm run build && node dist/download.js",
+        "prepare": "npm run build",
+        "postinstall": "node dist/download.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
