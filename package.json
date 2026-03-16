@@ -1,6 +1,6 @@
 {
     "name": "@smenikdov/libreoffice-convert",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A package to convert files using LibreOffice",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
