@@ -29,7 +29,7 @@ const downloadLibreOffice = async (typeSystemOS: string) => {
 }
 
 async function writeArchiveDownload() {
-    const response = await axios.get('https://github.com/vladholubiev/serverless-libreoffice/releases/download/v6.4.0.1/lo.tar.gz', {responseType: "stream"});
+    const response = await axios.get('https://github.com/vladholubiev/serverless-libreoffice/releases/download/v6.1.0/lo.tar.gz', {responseType: "stream"});
     await finished(response.data.pipe(libreOfficeDownloadPath));
     await tar.extract(
         {
